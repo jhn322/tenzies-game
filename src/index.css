@@ -46,6 +46,10 @@ main {
   text-align: center;
 }
 
+.green {
+  color: rgba(89, 227, 145, 0.8);
+}
+
 .dice-container {
   display: grid;
   grid-template: auto auto / repeat(5, 1fr);
@@ -95,11 +99,12 @@ main {
 @media only screen and (max-width: 900px) {
   main {
     width: 340px;
-    height: 680px;
+    height: 620px;
   }
 
   .title {
     font-size: 1.5rem;
+    margin-top: -1rem;
   }
 
   .instructions,
@@ -121,5 +126,11 @@ main {
     grid-template: repeat(1, 1fr) / repeat(3, 1fr);
     justify-items: center;
     gap: 10px 20px;
+  }
+  .roll-dice {
+    height: 45px;
+    width: 140px;
+    border-radius: 14px;
+    margin-bottom: -1rem;
   }
 }

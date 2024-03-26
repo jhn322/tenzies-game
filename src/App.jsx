@@ -75,7 +75,9 @@ function App() {
           current value between rolls.
         </p>
         <div className="dice-container">{diceElements}</div>
-        <p className="roll-count">Rolls: {rollCount}</p>{" "}
+        <p className={`roll-count ${tenzies ? "green" : ""}`}>
+          Rolls: {rollCount}
+        </p>
         <button className="roll-dice" onClick={rollDice}>
           {tenzies ? "New Game" : "Roll"}
         </button>
