@@ -98,11 +98,12 @@ main {
 
 @media only screen and (max-width: 900px) {
   body {
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .container {
-    height: 680px;
+    height: auto;
+    margin: 10px;
   }
 
   main {
