@@ -91,3 +91,23 @@ main {
 .roll-dice:active {
   transform: scale(0.95);
 }
+
+@media only screen and (max-width: 950px) {
+  main {
+    width: 340px;
+    height: 750px;
+    margin-bottom: 4rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .die-face {
+    height: 80px;
+    width: 80px;
+  }
+  .dice-container {
+    grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+    justify-items: center;
+  }
+}
